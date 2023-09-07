@@ -13,7 +13,18 @@ for letter in plain_text:
     cipher_text += key[index]
 
 print(f"Original message: {plain_text}")
-print(f"Encrypted text: {cipher_text}")
+print(f"Encrypted message: {cipher_text}")
+
+#Decrypt
+cipher_text = input("Enter the Encrypted message: ")
+plain_text = ""
+for letter in cipher_text:
+    index = key.index(letter)
+    plain_text += chars[index]
+
+print(f"Decrypted message: {plain_text}")
+
+
 
 
 
